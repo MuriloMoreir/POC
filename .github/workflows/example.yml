@@ -38,5 +38,5 @@ jobs:
       run: |
             echo "Conectando no EC2"
             echo "${{secrets.AWS_KEY_PRATICA}}" > private_key && chmod 600 private_key
-            ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-54-172-126-226.compute-1.amazonaws.com "
+            ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-3-221-123-119.compute-1.amazonaws.com "
                    cd POC/;git pull;./executar.sh"
